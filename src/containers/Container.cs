@@ -29,10 +29,9 @@ public class Container<T>{
     public void Remove(T obj, bool removeRepeats = false){
         if (!_objects.Contains(obj)) return;
 
-        if (removeRepeats == true){
-            _objects.RemoveAll(obj);
-        }
+        // TODO: ADD REMOVE ALL
 
-        _objects.Remove();
+
+        _objects.Remove(obj);
     }
 }
